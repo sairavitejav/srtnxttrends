@@ -1,0 +1,26 @@
+/* Write your CSS here */
+.cart-summary-container {
+  display: flex;
+  flex-direction: column;
+}
+.checkout-btn {
+  background-color: #0b69ff;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 0px;
+  cursor: pointer;
+  outline: none;
+}
+.total {
+  color: #616e7c;
+  margin-bottom: 0px;
+}
+.cost {
+  color: #171f46;
+  font-weight: bold;
+}
+.items-desc {
+  color: #616e7c;
+  margin-top: 0px;
+}
