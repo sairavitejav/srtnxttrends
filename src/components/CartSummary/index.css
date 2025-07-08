@@ -2,7 +2,9 @@
 .cart-summary-container {
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
+
 .checkout-btn {
   background-color: #0b69ff;
   color: #ffffff;
@@ -11,38 +13,53 @@
   border-width: 0px;
   cursor: pointer;
   outline: none;
+  font-size: 16px;
 }
+
 .total {
   color: #616e7c;
   margin-bottom: 0px;
 }
+
 .cost {
   color: #171f46;
   font-weight: bold;
+  font-size: 18px;
 }
+
 .items-desc {
   color: #616e7c;
   margin-top: 0px;
 }
+
 .payment-popup {
   padding: 20px;
 }
+
 .orders-header {
   color: #000000;
   font-size: 30px;
   text-align: center;
+  margin-bottom: 20px;
 }
+
 .pay-options {
   display: flex;
   flex-direction: row;
   margin: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
+
 .popup-btns {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
+
 .pop-btn-active {
   background-color: blue;
   color: #ffffff;
@@ -51,11 +68,58 @@
   border-radius: 10px;
   outline: none;
   cursor: pointer;
+  font-size: 16px;
 }
+
 .pop-btn-inactive {
   cursor: not-allowed;
+  opacity: 0.6;
 }
+
 .success {
   color: lightseagreen;
   font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .pay-options {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .popup-btns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .checkout-btn,
+  .pop-btn-active {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .orders-header {
+    font-size: 24px;
+  }
+
+  .payment-popup {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .orders-header {
+    font-size: 22px;
+  }
+
+  .cost {
+    font-size: 16px;
+  }
+
+  .success {
+    font-size: 18px;
+  }
 }
